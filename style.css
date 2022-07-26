@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 850px;
+  margin: auto;
+  background: #080808;
+}
+
+h1 {
+  font-family: 'Oleo Script', cursive, sans-serif;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+header {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header h4 {
+  width: 150px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #f0fff0;
+  background: rgb(36, 0, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 0, 12, 1) 0%,
+    rgba(121, 9, 44, 0.9990371148459384) 0%,
+    rgba(119, 12, 47, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header p {
+  font-size: 17px;
+  color: white;
+}
+
+section p {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 100px;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo-2 {
+  margin-top: 70px;
+}
+
+.photo-5 {
+  margin-top: 70px;
+}
+
+.name {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.slant {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    max-width: 650px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    padding-left: 20px;
+    padding-right: 35px;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+
+  header {
+    margin-top: 80px;
+    margin-bottom: 70px;
+    flex-direction: column;
+  }
+
+  .heading {
+    margin-bottom: 30px;
+  }
+
+  .photo-2 {
+    margin-top: 70px;
+  }
+
+  .photo-4 {
+    margin-top: 70px;
+  }
+
+  .photo-5 {
+    margin-top: 0px;
+  }
+
+  .photo-6 {
+    margin-top: 70px;
+  }
+
+  .name {
+    margin-top: 0px;
+    font-size: 13px;
+  }
+
+  .slant {
+    right: -20px;
+    font-size: 13px;
+  }
+}
